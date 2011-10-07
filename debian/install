@@ -1,0 +1,3 @@
+debian/tmp/etc/sphinxsearch/sphinx*.dist
+debian/tmp/usr/bin/*
+doc/sphinx.* /usr/share/doc/sphinxsearch
