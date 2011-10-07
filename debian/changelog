@@ -1,3 +1,10 @@
+sphinxsearch (0.9.9-1) unstable; urgency=low
+
+  * Update to 0.9.9.
+  * Use libstreammer_c.
+
+ -- Raúl Naveiras <raul@bebanjo.com>  Fri, 7 Oct 2011 19:00:00 +0200
+
 sphinxsearch (0.9.8.1-2) unstable; urgency=low
 
   * Added missing copyright entries.
