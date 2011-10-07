@@ -1,11 +1,11 @@
-Source: sphinxsearch
+Source: sphinxsearch-bebanjo
 Section: misc
 Priority: optional
-Maintainer: Radu Spineanu <radu@debian.org>
+Maintainer: Raúl Naveiras <raul@bebanjo.com>
 Build-Depends: debhelper (>= 7), autotools-dev, gawk, libmysqlclient-dev, dpatch, libpq-dev, autoconf, libtool, automake
 Standards-Version: 3.8.3
 
-Package: sphinxsearch
+Package: sphinxsearch-bebanjo
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libmysqlclient16
 Description: Fast standalone full-text SQL search engine
@@ -18,3 +18,4 @@ Description: Fast standalone full-text SQL search engine
  recognizes).
  .
  Sphinx is an acronym which is officially decoded as SQL Phrase Index. 
+ Sphinx includes libstremmer_c

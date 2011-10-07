@@ -26,7 +26,7 @@ source src1
 index test1
 {
 	source					= src1
-	path					= @CONFDIR@/data/test1
+	path					= @localstatedir@/data/test1
 	docinfo					= extern
 	charset_type			= sbcs
 }

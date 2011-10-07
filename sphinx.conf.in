@@ -216,14 +216,14 @@ source src1
 	# shell command to invoke xmlpipe stream producer
 	# mandatory
 	#
-	# xmlpipe_command	= cat @CONFDIR@/test.xml
+	# xmlpipe_command	= cat @localstatedir@/test.xml
 
 	#####################################################################
 	## xmlpipe2 settings
 	#####################################################################
 
 	# type				= xmlpipe2
-	# xmlpipe_command	= cat @CONFDIR@/test2.xml
+	# xmlpipe_command	= cat @localstatedir@/test2.xml
 
 
 	# xmlpipe2 field declaration
@@ -277,7 +277,7 @@ index test1
 
 	# index files path and file name, without extension
 	# mandatory, path must be writable, extensions will be auto-appended
-	path			= @CONFDIR@/data/test1
+	path			= @localstatedir@/data/test1
 
 	# document attribute values (docinfo) storage mode
 	# optional, default is 'extern'
@@ -312,13 +312,13 @@ index test1
 	# optional, default is empty
 	# contents are plain text, charset_table and stemming are both applied
 	#
-	# stopwords			= @CONFDIR@/data/stopwords.txt
+	# stopwords			= @localstatedir@/data/stopwords.txt
 
 
 	# wordforms file, in "mapfrom > mapto" plain text format
 	# optional, default is empty
 	#
-	# wordforms			= @CONFDIR@/data/wordforms.txt
+	# wordforms			= @localstatedir@/data/wordforms.txt
 
 
 	# tokenizing exceptions file
@@ -327,7 +327,7 @@ index test1
 	# plain text, case sensitive, space insensitive in map-from part
 	# one "Map Several Words => ToASingleOne" entry per line
 	#
-	# exceptions		= @CONFDIR@/data/exceptions.txt
+	# exceptions		= @localstatedir@/data/exceptions.txt
 
 
 	# minimum indexed word length
@@ -480,7 +480,7 @@ index test1
 # and may then be overridden in this index definition
 index test1stemmed : test1
 {
-	path			= @CONFDIR@/data/test1stemmed
+	path			= @localstatedir@/data/test1stemmed
 	morphology		= stem_en
 }
 
@@ -576,11 +576,11 @@ searchd
 
 	# log file, searchd run info is logged here
 	# optional, default is 'searchd.log'
-	log					= @CONFDIR@/log/searchd.log
+	log					= /var/log/sphinxsearch/searchd.log
 
 	# query log file, all search queries are logged here
 	# optional, default is empty (do not log queries)
-	query_log			= @CONFDIR@/log/query.log
+	query_log			= /var/log/sphinxsearch/query.log
 
 	# client read timeout, seconds
 	# optional, default is 5
@@ -596,7 +596,7 @@ searchd
 
 	# PID file, searchd process ID file name
 	# mandatory
-	pid_file			= @CONFDIR@/log/searchd.pid
+	pid_file			= /var/run/searchd.pid
 
 	# max amount of matches the daemon ever keeps in RAM, per-index
 	# WARNING, THERE'S ALSO PER-QUERY LIMIT, SEE SetLimits() API CALL

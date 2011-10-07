@@ -30,7 +30,7 @@ include /usr/share/dpatch/dpatch.make
 config.status: configure
 	dh_testdir
 	# Add here commands to configure the package.
-	./configure --host=$(DEB_HOST_GNU_TYPE) --build=$(DEB_BUILD_GNU_TYPE) --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info --localstatedir=/var/lib/sphinxsearch --sysconfdir=/etc/sphinxsearch --with-pgsql CFLAGS="$(CFLAGS)" LDFLAGS="-Wl,-z,defs"
+	./configure --host=$(DEB_HOST_GNU_TYPE) --build=$(DEB_BUILD_GNU_TYPE) --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info --localstatedir=/var/lib/sphinxsearch --sysconfdir=/etc/sphinxsearch --with-libstemmer --with-pgsql CFLAGS="$(CFLAGS)" LDFLAGS="-Wl,-z,defs"
 
 build: patch build-stamp
 

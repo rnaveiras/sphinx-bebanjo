@@ -1,4 +1,4 @@
-sphinxsearch (0.9.9-1) unstable; urgency=low
+sphinxsearch-bebanjo (0.9.9-1) stable; urgency=low
 
   * Update to 0.9.9.
   * Use libstreammer_c.
