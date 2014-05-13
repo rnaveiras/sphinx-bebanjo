@@ -1,13 +1,13 @@
 Source: sphinxsearch-bebanjo
 Section: misc
 Priority: optional
-Maintainer: Raúl Naveiras <raul@bebanjo.com>
-Build-Depends: debhelper (>= 7), autotools-dev, gawk, libmysqlclient-dev, dpatch, libpq-dev, autoconf, libtool, automake
+Maintainer: Bebanjo OPS <tech_admin@bebanjo.com>
+Build-Depends: debhelper (>= 7), autotools-dev, gawk, libmysqlclient-dev, dpatch, libpq-dev, autoconf, libtool
 Standards-Version: 3.8.3
 
 Package: sphinxsearch-bebanjo
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libmysqlclient16
+Depends: ${misc:Depends}, automake, libc6, libgcc1, libmysqlclient18 | libmysqlclient16, libpq5, libstdc++6, zlib1g
 Description: Fast standalone full-text SQL search engine
  Sphinx is a standalone full text search engine, meant to provide fast,
  size-efficient and relevant fulltext search functions to other applications. 
